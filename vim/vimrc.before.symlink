@@ -1,0 +1,8 @@
+" change the mapleader from \ to ,
+let mapleader=","
+
+" Disable Buffergator because it interferes with the
+" CTRL-P leader-t when using vim from terminal
+call janus#disable_plugin('buffergator')
+
+nmap <silent> <leader>t :CtrlP<CR>

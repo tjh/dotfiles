@@ -1,9 +1,14 @@
 require 'rake'
 
+desc 'Install Janus'
+task :janus do
+  system %Q{curl -Lo- https://bit.ly/janus-bootstrap | bash}
+  system %Q{ln -s "#{ENV['HOME']}/.dotfiles/janus" "#{ENV['HOME']}/.janus"}
+end
+
 # From https://github.com/franciscoj/dot-files/blob/b06c589f0340e8cda98c96ac79a50c03c1ed46b2/Rakefile
 desc 'Install Oh-My-Zsh'
 task :ohmyzsh do
-  #install oh-my-zsh
   system %Q{rm -rf "$HOME/.oh-my-zsh"}
   system %Q{/usr/bin/env git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh}
   system %Q{chsh -s /bin/zsh}

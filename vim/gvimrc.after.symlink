@@ -1,0 +1,4 @@
+" Solarized FTW
+syntax enable
+set background=dark
+colorscheme solarized
