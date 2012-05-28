@@ -1,5 +1,15 @@
 require 'rake'
 
+# From https://github.com/franciscoj/dot-files/blob/b06c589f0340e8cda98c96ac79a50c03c1ed46b2/Rakefile
+desc 'Install Oh-My-Zsh'
+task :ohmyzsh do
+  #install oh-my-zsh
+  system %Q{rm -rf "$HOME/.oh-my-zsh"}
+  system %Q{/usr/bin/env git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh}
+  system %Q{chsh -s /bin/zsh}
+  system %Q{ln -s "#{ENV['HOME']}/.dotfiles/zsh/tharvey.zsh-theme" "#{ENV['HOME']}/.oh-my-zsh/themes/tharvey.zsh-theme"}
+end
+
 # Symlinks from Holman's dotfiles
 # https://github.com/holman/dotfiles/blob/88d869cf8b498e82108a7f63393b71ed1882a599/Rakefile
 desc "Hook our dotfiles into system-standard positions."
