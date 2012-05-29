@@ -38,4 +38,5 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Automatically use "bundle exec" for key ruby commands
+[ -f ~/.dotfiles/zsh/bundle-exec.sh ] && source ~/.dotfiles/zsh/bundle-exec.sh
