@@ -2,3 +2,14 @@
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Move between panes using CTRL- j,k,h,l
+" From http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
+map <C-J> <C-W>j<C-W>
+map <C-K> <C-W>k<C-W>
+map <C-H> <C-W>h<C-W>
+map <C-L> <C-W>l<C-W>
+
+" Remove trailing whitespace from all files
+" From http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
+autocmd BufWritePre * :%s/\s\+$//e
