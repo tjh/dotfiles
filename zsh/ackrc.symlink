@@ -1,0 +1,6 @@
+--type-add=ruby=.haml,.sass
+--type-add=css=.sass,.scss
+--type-set=haml=.haml
+--type-add=css=.less
+--type-add=js=.coffee
+--type-set=markdown=.md,.mkd,.markdown
