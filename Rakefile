@@ -49,6 +49,14 @@ task :install do
     end
     `ln -s "$PWD/#{linkable}" "#{target}"`
   end
+
+  # Symlink all the ./bin folder items into ~/.bin/
+  Dir.glob('./bin/**').each do |binary|
+    file = binary.split('/').last
+    target = "#{ENV["HOME"]}/.bin/#{file}"
+
+    `ln -s "$PWD/#{binary}" "#{target}"`
+  end
 end
 
 task :uninstall do

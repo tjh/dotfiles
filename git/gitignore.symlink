@@ -1,5 +1,9 @@
-# Global OSX
+#
+# == Global OSX ==
+#
 # From https://github.com/github/gitignore/blob/85de979a0392a1df538976548c418d0a3b6b17af/Global/OSX.gitignore
+#
+
 .DS_Store
 
 # Thumbnails
@@ -9,8 +13,19 @@
 .Spotlight-V100
 .Trashes
 
-# Global vim
+#
+# == Global vim ==
+#
 # From https://github.com/github/gitignore/blob/05fa33b5548e36d1a0cd6cc2c5f47966d25ab708/Global/vim.gitignore
+#
+
 .*.sw[a-z]
 *.un~
 Session.vim
+
+#
+# == Ignores specific to my setup ==
+#
+
+# .lighthouse-config is used by my scripts to store private configuration
+.lighthouse-config
