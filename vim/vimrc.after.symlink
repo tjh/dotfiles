@@ -5,10 +5,10 @@ colorscheme solarized
 
 " Move between panes using CTRL- j,k,h,l
 " From http://vim.wikia.com/wiki/Switch_between_Vim_window_splits_easily
-map <C-J> <C-W>j<C-W>
-map <C-K> <C-W>k<C-W>
-map <C-H> <C-W>h<C-W>
-map <C-L> <C-W>l<C-W>
+map <C-J> <C-W>j<C-W><esc>
+map <C-K> <C-W>k<C-W><esc>
+map <C-H> <C-W>h<C-W><esc>
+map <C-L> <C-W>l<C-W><esc>
 
 " Remove trailing whitespace from all files
 " From http://vim.wikia.com/wiki/Remove_unwanted_spaces#Automatically_removing_all_trailing_whitespace
