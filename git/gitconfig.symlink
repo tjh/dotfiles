@@ -1,0 +1,20 @@
+[core]
+	excludesfile = /Users/tharvey/.gitignore
+	editor = mvim -f
+[user]
+	name = Tim Harvey
+	email = tim@theharveys.org
+[color]
+	interactive = auto
+	diff = auto
+	status = auto
+	branch = auto
+[merge]
+	tool = vimdiff
+	summary = true
+[apply]
+	whitespace = nowarn
+[github]
+	user = tjh
+[alias]
+	timeline = log --oneline --graph --decorate
