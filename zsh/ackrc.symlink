@@ -1,4 +1,4 @@
---type-add=ruby=.haml,.rake,.rsel,.builder
+--type-add=ruby=.haml,.rake,.rsel,.builder,.rabl
 --type-add=html=.html.erb,.html.haml
 --type-add=js=.js.erb,.json
 --type-add=css=.sass,.less,.scss
