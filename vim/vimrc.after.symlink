@@ -15,10 +15,10 @@ map <C-L> <C-W>l<C-W><esc>
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Ctrl-P
-let g:ctrlp_max_height = 16
-let g:ctrlp_max_files  = 15000
+let g:ctrlp_max_height = 24
+let g:ctrlp_max_files  = 20000
 let g:ctrlp_dotfiles   = 0
-let g:ctrlp_max_depth  = 45
+let g:ctrlp_max_depth  = 50
 
 let g:ctrlp_user_command = {
 \ 'types': {
