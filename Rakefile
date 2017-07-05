@@ -51,6 +51,8 @@ task :install do
   end
 
   # Symlink all the ./bin folder items into ~/.bin/
+  cmd = 'mkdir -p ~/.bin'
+  puts `#{cmd}`
   Dir.glob('./bin/**').each do |binary|
     file = binary.split('/').last
     target = "#{ENV["HOME"]}/.bin/#{file}"
