@@ -1,10 +1,31 @@
---type-add=ruby=.haml,.rake,.rsel,.builder,.rabl
---type-add=html=.html.erb,.html.haml
+### added default search types
+--ruby
+--markdown
+--actionscript
+--haskell
+--php
+--elisp
+--coffeescript
+--js
+--go
+--python
+--cpp
+--cc
+--html
+--css
+--java
+--cucumber
+
+--type-add=ruby=.haml,.rake,.rsel,.builder,.rabl,.yml
+--type-add=html=.html.erb
 --type-add=js=.js.erb,.json
 --type-add=css=.sass,.less,.scss
 --type-set=cucumber=.feature
---type-set=coffeescript=.coffee
+--type-set=coffeescript=.coffee,.js.coffee
 --type-set=markdown=.markdown,.mdown,.md,.mkd,.mkdn,.txt
+--type-set=slim=.slim,.html.slim
+--type-add=css=slim
+--type-add=js=coffee
 
 --ignore-dir=coverage
 --ignore-dir=log
