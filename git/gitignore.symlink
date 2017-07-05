@@ -1,31 +1,51 @@
 #
-# == Global OSX ==
-#
-# From https://github.com/github/gitignore/blob/85de979a0392a1df538976548c418d0a3b6b17af/Global/OSX.gitignore
-#
-
-.DS_Store
-
-# Thumbnails
-._*
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-#
-# == Global vim ==
+# Global vim
 #
 # From https://github.com/github/gitignore/blob/05fa33b5548e36d1a0cd6cc2c5f47966d25ab708/Global/vim.gitignore
-#
 
 .*.sw[a-z]
 *.un~
 Session.vim
 
 #
-# == Ignores specific to my setup ==
+# Compiled source
 #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-# .lighthouse-config is used by my scripts to store private configuration
-.lighthouse-config
+#
+# Packages
+#
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+#
+# Logs and databases
+#
+*.log
+*.sql
+*.sqlite
+
+#
+# OS generated files
+#
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
