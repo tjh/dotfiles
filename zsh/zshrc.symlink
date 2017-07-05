@@ -40,3 +40,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Automatically use "bundle exec" for key ruby commands
 [ -f ~/.dotfiles/zsh/bundle-exec.sh ] && source ~/.dotfiles/zsh/bundle-exec.sh
+
+source $HOME/.dotfiles/zsh/aliases.zsh
+
+export VISUAL='mvim -f'
+export EDITOR=vim
