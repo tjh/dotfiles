@@ -6,3 +6,7 @@ let mapleader=","
 call janus#disable_plugin('buffergator')
 
 nmap <silent> <leader>t :CtrlP<CR>
+
+" Exit insert mode with 'hh'
+" From http://vim.wikia.com/wiki/Avoid_the_escape_key
+inoremap hh <Esc>
