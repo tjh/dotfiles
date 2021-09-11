@@ -18,3 +18,5 @@
 	user = tjh
 [alias]
 	timeline = log --oneline --graph --decorate
+[pull]
+	rebase = false
