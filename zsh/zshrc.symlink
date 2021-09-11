@@ -45,3 +45,5 @@ source $HOME/.dotfiles/zsh/aliases.zsh
 
 export VISUAL='mvim -f'
 export EDITOR=vim
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
