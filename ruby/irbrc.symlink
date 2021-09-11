@@ -29,25 +29,6 @@
 # -----------------------------------------
   require 'irb/completion'
 
-# -----------------------------------------
-#  Wirble - Coloring and other irb niceties
-# -----------------------------------------
-  begin
-    require 'wirble'
-    Wirble.init
-    Wirble.colorize
-  rescue LoadError => err
-    warn "Couldn't load Wirble: #{err}"
-  end
-
-# -----------------------------------------
-#  What methods (and result) are available
-# -----------------------------------------
-  begin
-    require 'what_methods'
-  rescue LoadError => err
-    warn "Couldn't load what_methods: #{err}"
-  end
 
 # -----------------------------------------
 #  Indent blocks
@@ -131,18 +112,6 @@
     puts " (#{(cur / $last_benchmark * 100).to_i - 100}% change)" rescue puts ""
     $last_benchmark = cur
     result
-  end
-
-# -----------------------------------------
-#  Hirb - Pretty ActiveRecord tables, seems
-#         to require loading at the end to
-#         avoid conflicts with other tools
-# -----------------------------------------
-  begin
-    require 'hirb'
-    Hirb::View.enable
-  rescue LoadError => err
-    warn "Couldn't load Hirb: #{err}"
   end
 
 # -----------------------------------------
