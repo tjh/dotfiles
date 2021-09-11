@@ -3,7 +3,7 @@
 	editor = mvim -f
 [user]
 	name = Tim Harvey
-	email = tim@theharveys.org
+	email = 39763+tjh@users.noreply.github.com
 [color]
 	interactive = auto
 	diff = auto
